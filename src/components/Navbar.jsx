@@ -20,17 +20,17 @@ const Navbar = () => {
         {user?.email ? 
         <div>
           <Link to='/account'>
-            <button className='text-white pr-4'> Hesabım </button>
+            <button className='hidden text-white pr-4 sm:inline-block'> Hesabım </button>
           </Link>
-           <button onClick={handleLogout} className='bg-rose-600 px-6 py-2 rounded cursor-pointer text-white'>Cıkıs Yap </button> 
+           <button onClick={handleLogout} className='bg-rose-600 px-1 sm:px-6 py-1 rounded cursor-pointer text-white'>Cıkıs Yap </button> 
         </div> 
         :
         <div>
           <Link to='/login'>
-            <button className='text-white pr-4'> Giris Yap </button>
+            <button className='hidden text-white pr-4 sm:inline-block '> Giris Yap </button>
           </Link>
           <Link to='/signup'>
-           <button className='bg-rose-600 px-6 py-2 rounded cursor-pointer text-white'>Kayıt Ol </button> 
+           <button className='bg-slate-700 sm:bg-rose-600 px-1 sm:px-6 py-1 sm:py-2 rounded cursor-pointer text-white'>Kayıt Ol </button> 
           </Link>
         </div>
         }
