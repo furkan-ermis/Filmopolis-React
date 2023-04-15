@@ -2,6 +2,8 @@
 ---
 netlify live  [**`Filmopolis`**](https://filmopolis.netlify.app)
 
+
+- firebase -> authentication & Firestore Database
 ---
 ![](/src/images/Ekran%20görüntüsü1.png "HomePage") ![](/src/images/Ekran%20görüntüsü2.png "KayıtOl") ![](/src/images/Ekran%20görüntüsü3.png "Hesabım")
 
