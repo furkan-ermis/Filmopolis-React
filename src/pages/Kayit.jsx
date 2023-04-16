@@ -18,16 +18,15 @@ const Kayit = () => {
   };
   return (
     <>
-      <div className="w-full h-screen">
-        <img
-          className="hidden sm:block absolute w-full object-cover"
-          src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-          alt="/"
-        />
-        <div className="bg-black/60 fixed top-0 left-0 w-full h-screen"></div>
-        <div className="fixed w-full px-4 py-24 z-50">
-          <div className="max-w-[450px] h-[600px] mx-auto bg-slate-200/40 text-white">
-            <div className="max-w-[350px] mx-auto py-16">
+      <div className="perspective-6 w-full h-screen overflow-hidden">
+       
+      <img src={process.env.PUBLIC_URL+"poster.png"} alt="/" className="hidden rounded-3xl  rotate-x-20 rotate-y-55  -rotate-z-20 scale-110 sm:block absolute -right-[11rem] bottom-[16rem] w-[70%] min-h-full  object-cover" />        <img src={process.env.PUBLIC_URL+"poster.png"} alt="/" className="sm:hidden fixed w-full min-h-[85%] bottom-0 object-cover" />
+        <div className="bg-black/60  fixed top-0 left-0 w-full h-screen"></div>
+        <div className=" bg-gradient-to-l from-black/10 via-black/40  to-black/80 fixed top-0 left-0 w-[100%] h-screen"></div>
+        
+        <div className="fixed w-full bottom-[22em]  sm:bottom-[15em] sm:left-20 px-4 py-24 z-50 ">
+          <div className="max-w-[400px] h-[340px]  bg-black/40   backdrop-blur rounded-3xl  text-white">
+            <div className="max-w-[350px] mx-auto py-2">
               <h1 className="text-3xl font-bold">Kayıt Ol</h1>
               <form
                 onSubmit={handleSubmit}
@@ -35,19 +34,19 @@ const Kayit = () => {
               >
                 <input
                   onChange={(e) => setEmail(e.target.value)}
-                  className="p-3 my-2 bg-gray-600 rounded"
+                  className="outline-none p-3 my-2 bg-transparent shadow-md shadow-slate-500 rounded"
                   type="email"
                   placeholder="Email"
                   autoComplete="Email"
                 />
                 <input
                   onChange={(e) => setPassword(e.target.value)}
-                  className="p-3 my-2 bg-gray-600 rounded"
+                  className="outline-none p-3 my-2 bg-transparent shadow-md shadow-slate-500 rounded"
                   type="password"
                   placeholder="Parola"
                   autoComplete="Parola"
                 />
-                <button className="bg-rose-600 py-3 my-6 rounded font-bold">
+                <button className="hover:bg-gradient-to-r hover:from-yellow-400  hover:to-transparent hover:text-black  border  border-yellow-400 py-3 my-6 rounded font-bold">
                   Kayıt Ol
                 </button>
                 <div className="flex justify-between items-center text-sm text-gray-600">

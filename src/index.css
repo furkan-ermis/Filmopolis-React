@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@font-face {
+  font-family: "Light";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/BeautyMountainsPersonalUse-od7z.ttf") format("truetype");
+}
+
 body{
   background-color: #000;
-  font-family: 'Lato','Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
