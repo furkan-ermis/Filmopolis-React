@@ -20,9 +20,9 @@ const Navbar = () => {
         {user?.email ? 
         <div>
           <Link to='/account'>
-            <button className='hidden hover:bg-black  bg-gradient-to-r from-transparent text-white via-black  to-black pr-4 sm:inline-block'> Hesabım </button>
+            <button className='hidden  font-bold  hover:bg-black  bg-gradient-to-r from-transparent text-white via-black  to-black px-1 sm:px-6 py-1 sm:py-2 rounded cursor-pointer mr-3 sm:inline-block '> Hesabım </button>
           </Link>
-           <button onClick={handleLogout} className='hover:bg-yellow-400  bg-gradient-to-l from-transparent  via-yellow-500  to-yellow-200 px-1 sm:px-6 py-1 rounded cursor-pointer text-white'>Cıkıs Yap </button> 
+           <button onClick={handleLogout} className='hidden text-black font-bold  hover:bg-yellow-400  bg-gradient-to-l from-transparent  via-yellow-500  to-yellow-200 px-1 sm:px-6 py-1 sm:py-2 rounded cursor-pointer sm:inline-block '>Cıkıs Yap </button> 
         </div> 
         :
         <div>
