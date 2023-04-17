@@ -24,7 +24,7 @@ const Kayit = () => {
         <div className="bg-black/60  fixed top-0 left-0 w-full h-screen"></div>
         <div className=" bg-gradient-to-l from-black/10 via-black/40  to-black/80 fixed top-0 left-0 w-[100%] h-screen"></div>
         
-        <div className="fixed w-[40%]   sm:bottom-[2em] sm:left-16 px-4 py-24 z-50 ">
+        <div className="fixed w-full bottom-[22em]  sm:bottom-[2em] sm:left-16 px-4 py-24 z-50 ">
           <div className="max-w-[400px] h-[340px]  bg-black/40   backdrop-blur rounded-3xl  text-white">
             <div className="max-w-[350px] mx-auto py-2">
               <h1 className="text-3xl font-bold">Kayıt Ol</h1>
